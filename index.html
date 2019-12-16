@@ -13,28 +13,79 @@
     />
 
     <style>
-      body {
-        background-color: #fafafa;
-        font-family: 'Fira Code';
-        line-height: 2rem;
+      :root {
+        --color-primary: #eb2f64;
+        --color-primary-light: #ff3366;
+        --color-primary-dark: #ba265d;
+        --color-grey-light-1: #faf9f9;
+        --color-grey-light-2: #f4f2f2;
+        --color-grey-light-3: #f0eeee;
+        --color-grey-light-4: #ccc;
+        --color-grey-dark-1: #333;
+        --color-grey-dark-2: #777;
+        --color-grey-dark-3: #999;
+        --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+        --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+        --line: 1px solid var(--color-grey-light-2);
       }
 
-      h1 {
-        color: #222;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: 'Fira Code', sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        max-width: 100rem;
+        margin: 2rem auto;
+        background-color: var(--color-grey-light-1);
+      }
+
+      .main-title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      .question-box .question {
+        font-size: 3rem;
+        font-weight: 500;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+      }
+
+      .question-box .answer {
+        font-size: 1.75rem;
       }
     </style>
   </head>
   <body>
-    <h1>Angular Interview Questions</h1>
+    <h1 class="main-title">Angular Interview Questions</h1>
 
-    <div class="question-box">
-      <div class="question">
-        What is Angular?
-      </div>
-      <div class="answer">
-        Angular (also referred to as Angular 2+) is a web development platform
-        built in TypeScript which provides developers with robust tools for
-        creating the client side of web applications.
+    <div class="container">
+      <div class="question-box">
+        <div class="question">
+          1) What is Angular?
+        </div>
+        <div class="answer">
+          Angular (also referred to as Angular 2+) is a web development platform
+          built in TypeScript which provides developers with robust tools for
+          creating the client side of web applications.
+        </div>
       </div>
     </div>
   </body>
